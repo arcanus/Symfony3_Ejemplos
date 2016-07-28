@@ -8,10 +8,10 @@ security:
             memory:
               users:
                   paul:
-                    password: 0n1yd3bi4n
+                    password: 1234
                     roles:    'ROLE_USER'
-                  juan:
-                    password: lalala1234
+                  john:
+                    password: 4321
                     roles:    'ROLE_ADMIN'
 
     role_hierarchy:
@@ -35,7 +35,7 @@ security:
 
     access_control:
         - { path: ^/admin, roles: ROLE_ADMIN }
-        - { path: ^/user, roles: , ROLE_ADMIN }
+        - { path: ^/user, roles: , ROLE_USER }
 
     encoders:
         Symfony\Component\Security\Core\User\User: plaintext
