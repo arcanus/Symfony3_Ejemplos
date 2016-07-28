@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block styles %}
+  {{ parent() }}
+  <link rel="stylesheet" href="css/signin.css">
+{% endblock %}
+
+{% block body %}
+
+  <div class="container">
+
+    <form class="form-signin">
+      <h2 class="form-signin-heading">Iniciar Sesión:</h2>
+      <label for="inputUser" class="sr-only">Usuario:</label>
+      <input type="text" id="inputUser" class="form-control" placeholder="Nombre De Usuario" required autofocus>
+      <label for="inputPassword" class="sr-only">Password:</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" value="remember-me"> Recordar
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Acceder</button>
+    </form>
+
+  </div> <!-- /container -->
+
+{% endblock %}

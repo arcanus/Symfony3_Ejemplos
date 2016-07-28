@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+  {{ parent() }}
+
+      <h1>Página Pública:</h1>
+      <p class="lead">Todo el mundo puede acceder a esta página.</p>
+      <p>Para probar los diferentes accesos usar:</p>
+      <p>User: <strong>paul</strong> Password: <strong>1234</strong> Role: <strong>User</strong></p>
+      <p>User: <strong>john</strong> Password: <strong>4321</strong> Role: <strong>Admin</strong></p>
+
+{% endblock %}
