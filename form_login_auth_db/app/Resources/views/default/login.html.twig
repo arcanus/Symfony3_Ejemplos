@@ -21,7 +21,7 @@
       {% endif %}
 
       <label for="inputUser" class="sr-only">Usuario:</label>
-      <input type="text" id="inputUser" class="form-control" placeholder="Nombre De Usuario" name="_username" required autofocus>
+      <input type="text" id="inputUser" class="form-control" placeholder="Nombre De Usuario" name="_username" value="{{ last_username }}" required autofocus>
       <label for="inputPassword" class="sr-only">Password:</label>
       <input type="password" id="inputPassword" class="form-control" name="_password" placeholder="Password" required>
       <div class="checkbox">
